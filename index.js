@@ -4,6 +4,10 @@ let cart = [];
 const allBtn =document.getElementsByClassName('sit-btn')
 for (const btn of allBtn) {
     btn.addEventListener('click', function(e){
+        if( document.getElementById('sit-count').innerText > 3){
+            alert('You have already Four sit  ')
+            return 
+        }
        const btnValue = e.target.innerText;
        e.target.style.backgroundColor = "#1DD100";
        cart.push(btnValue)
@@ -23,10 +27,6 @@ for (const btn of allBtn) {
         const orederSit = parseInt(document.getElementById('sit-count').innerText);
         const increment = orederSit + count
         document.getElementById('sit-count').innerText = increment;
-        if(increment > 4){
-            alert('You have already Four sit  ')
-            return 
-        }
         // Append Html 
         
        const selectedItem =  document.getElementById('append-html')
