@@ -41,7 +41,9 @@ for (const btn of allBtn) {
         document.getElementById('totalValue').innerText = total
         document.getElementById('grand_total-value').innerText = total
         
-        
+        const nextBtn = document.getElementById('next-btn');
+        nextBtn.removeAttribute('disabled')
+       
     })
 }
 
