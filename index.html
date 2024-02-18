@@ -53,7 +53,11 @@
             background-image: linear-gradient(
                 180deg,
                 rgba(3, 7, 18, 0.5),
-                rgba(3, 7, 18, 0) 100%),url(./images/banner.png);">
+                rgba(3, 7, 18, 0) 100%
+              ),
+              url(./images/banner.png);
+          "
+        >
           <div class="hero-content text-center text-white">
             <div class="w-2/3 space-y-6">
               <h1 class="raleway mb-5 text-5xl font-bold text-lime-50">
@@ -65,8 +69,8 @@
                 assumenda excepturi exercitationem quasi. In deleniti eaque aut
                 repudiandae et a id nisi.
               </p>
-              <button class="btn bg-[#1DD100] border-none text-xl font-bold">
-                Buy Tickets
+              <button  class="btn   bg-[#1DD100] border-none text-xl font-bold"> 
+                <a href="#Bey-tocket-section">Buy Tickets</a>
               </button>
             </div>
           </div>
@@ -79,7 +83,7 @@
         <h1 class="inter text-3xl text-center font-semibold">
           Best offers for you
         </h1>
-        <div class="flex justify-around gap-10">
+        <div class="flex justify-around flex-col lg:flex-row gap-10">
           <div class="card card-side w-[570px] h-56 bg-[#FFBF0F] mt-8">
             <div class="justify-start py-8 pl-16 pr-20 text-left">
               <h1 class="text-4xl font-extrabold">15% OFF</h1>
@@ -131,13 +135,13 @@
           </p>
         </div>
         <!-- Greenline Paribahan section -->
-        <div class="container mx-auto flex gap-8 bg-white rounded-3xl mb-7">
+        <div class="container mx-auto flex flex-col lg:flex-row gap-8 bg-white rounded-3xl mb-7">
           <div class="flex-1 p-12">
             <div class="flex justify-between">
               <div class="flex gap-4">
                 <img src="./images/bus-logo.png" alt="" />
                 <div>
-                  <h1 class="text-3xl font-semibold">Greenline Paribahan</h1>
+                  <h1 class="text-2xl lg:text-3xl font-semibold">Greenline Paribahan</h1>
                   <p>Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
@@ -145,7 +149,7 @@
                 class="flex btn bg-[#1DD10026] text-green-400 p-3 px-4 border-green-400"
               >
                 <img src="./images/seat-green.png" alt="" />
-                <h1 class="text-xl"><span>40</span> Seats left</h1>
+                <h1 class="text-xl"><span id="sit-ount-decrement">40</span> Seats left</h1>
               </div>
             </div>
             <div class="bg-[#F7F8F8] rounded-2xl mt-5 px-8">
@@ -174,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class=" ">
             <img src="./images/info-devider.png" alt="" />
           </div>
           <div
@@ -187,7 +191,7 @@
         </div>
         <!-- Select Your Seat section -->
 
-        <div
+        <div id="Bey-tocket-section"
           class="container mx-auto flex gap-16 p-10 bg-white rounded-3xl mb-2"
         >
           <div class="flex-1 mr-16">
@@ -210,16 +214,16 @@
               </div>
               <!-- A -->
               <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>A</p></div>
+                <div class="text-xl"><p>A</p></div>
 
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">A1</button>
-                    <button class="btn px-10 bg-[#0307121A]">A2</button>
+                <div class="flex gap-28">
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">A1</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">A2</button>
                   </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">A3</button>
-                    <button class="btn px-10 bg-[#0307121A]">A4</button>
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">A3</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">A4</button>
                   </div>
                 </div>
               </div>
@@ -227,14 +231,14 @@
               <div class="flex gap-8 mt-5">
                 <div class="text-2xl"><p>B</p></div>
 
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">B1</button>
-                    <button class="btn px-10 bg-[#0307121A]">B2</button>
+                <div class="flex gap-28">
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">B1</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">B2</button>
                   </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">B3</button>
-                    <button class="btn px-10 bg-[#0307121A]">B4</button>
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">B3</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">B4</button>
                   </div>
                 </div>
               </div>
@@ -242,14 +246,14 @@
               <div class="flex gap-8 mt-5">
                 <div class="text-2xl"><p>C</p></div>
 
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">C1</button>
-                    <button class="btn px-10 bg-[#0307121A]">C2</button>
+                <div class="flex gap-28">
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">C1</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">C2</button>
                   </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">C3</button>
-                    <button class="btn px-10 bg-[#0307121A]">C4</button>
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">C3</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">C4</button>
                   </div>
                 </div>
               </div>
@@ -257,14 +261,14 @@
               <div class="flex gap-8 mt-5">
                 <div class="text-2xl"><p>d</p></div>
 
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">D1</button>
-                    <button class="btn px-10 bg-[#0307121A]">D2</button>
+                <div class="flex gap-28">
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">D1</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">D2</button>
                   </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">D3</button>
-                    <button class="btn px-10 bg-[#0307121A]">D4</button>
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">D3</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">D4</button>
                   </div>
                 </div>
               </div>
@@ -272,124 +276,49 @@
               <div class="flex gap-8 mt-5">
                 <div class="text-2xl"><p>E</p></div>
 
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">A1</button>
-                    <button class="btn px-10 bg-[#0307121A]">A2</button>
+                <div class="flex gap-28">
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">E1</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">E2</button>
                   </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">A3</button>
-                    <button class="btn px-10 bg-[#0307121A]">A4</button>
-                  </div>
-                </div>
-              </div>
-              <!-- F -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>F</p></div>
-
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">F1</button>
-                    <button class="btn px-10 bg-[#0307121A]">F2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">F3</button>
-                    <button class="btn px-10 bg-[#0307121A]">F4</button>
+                  <div class="grid grid-cols-2 gap-20">
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">E3</button>
+                    <button class="btn sit-btn px-10 bg-[#0307121A]">E4</button>
                   </div>
                 </div>
               </div>
-              <!-- G -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>G</p></div>
-
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">G1</button>
-                    <button class="btn px-10 bg-[#0307121A]">G2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">G3</button>
-                    <button class="btn px-10 bg-[#0307121A]">G4</button>
-                  </div>
-                </div>
-              </div>
-              <!-- H -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>H</p></div>
-
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">H1</button>
-                    <button class="btn px-10 bg-[#0307121A]">H2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">H3</button>
-                    <button class="btn px-10 bg-[#0307121A]">H4</button>
-                  </div>
-                </div>
-              </div>
-              <!-- I -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>I</p></div>
-
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">I1</button>
-                    <button class="btn px-10 bg-[#0307121A]">I2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">I3</button>
-                    <button class="btn px-10 bg-[#0307121A]">I4</button>
-                  </div>
-                </div>
-              </div>
-              <!-- J -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>J</p></div>
-
-                <div class="flex  gap-32">
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">J1</button>
-                    <button class="btn px-10 bg-[#0307121A]">J2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-16">
-                    <button class="btn px-10 bg-[#0307121A]">J3</button>
-                    <button class="btn px-10 bg-[#0307121A]">J4</button>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div class="mr-5">
             <h1 class="text-3xl mb-4">Select Your Seat</h1>
             <div class="bg-[#E3E1D9] rounded-xl p-8 w-[400px] space-y-4">
               <div class="flex justify-between text-lg font-semibold">
-                <h1>Seat <span>2</span></h1>
+                <h1>Seat <span id="sit-count" class="bg-[#1DD100] p-1 rounded-lg">0</span></h1>
                 <p>Class</p>
                 <p>Price</p>
               </div>
               <hr class="h-1 bg-gray-800" />
-              <div class="flex justify-between">
-                <h1>C2</h1>
-                <p>Economoy</p>
-                <p>550</p>
-              </div>
+              <div>
+                <ul id="append-html">
 
-              <div class="flex justify-between">
-                <h1>C2</h1>
-                <p>Economoy</p>
-                <p>550</p>
+                </ul>
               </div>
               <hr class="h-1 bg-gray-300" />
               <div class="flex justify-between text-lg font-medium">
                 <h1>Total Price</h1>
                 <p>BDT <span>0</span></p>
               </div>
-              <input
-                class="w-full p-4 rounded-lg"
+              <div class="relative">
+                <input
+                class="w-full p-4 rounded-lg "
                 placeholder="Have any copupon?"
                 type="text"
               />
+              <button class="btn absolute p-4 bg-[#1DD100] right-2 top-1 text-white font-semibold ">
+                Apply
+              </button>
+              </div>
               <div class="flex justify-between text-lg font-medium">
                 <h1>Grand Total</h1>
                 <p>BDT <span>0</span></p>
@@ -427,30 +356,32 @@
       </section>
     </main>
     <footer class="mt-20 bg-[#030712]">
-        <div class="container mx-auto pt-8">
-            <div class="footer p-10 flex justify-between  text-white">          
-                  <div class="space-y-4">
-                    <h6 class=" text-3xl font-bold ">P-Ticket</h6> 
-                  <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
-                  </div>
-                  <div class="grid grid-flow-col gap-4  ">  
-                    <div class="space-y-4">
-                        <h1>Download our app</h1>
-                    <img src="./images/./play.png" alt="">
-                    </div>
-                  </div>
+      <div class="container mx-auto pt-8">
+        <div class="footer p-10 flex justify-between text-white">
+          <div class="space-y-4">
+            <h6 class="text-3xl font-bold">P-Ticket</h6>
+            <p>
+              P-Ticket is a digital platform to make your <br />
+              daily commuting better.
+            </p>
+          </div>
+          <div class="grid grid-flow-col gap-4">
+            <div class="space-y-4">
+              <h1>Download our app</h1>
+              <img src="./images/./play.png" alt="" />
             </div>
-            <hr class="h-1 text-gray-800">
-            <div class="footer p-10 flex justify-between  text-white">
-                <p>@all rights reserved, P-Ticket services limited.2024</p>
-                <div class="flex gap-4">
-                    <p>Terms & condition</p>
-                    <p>Return & refund policy</p>
-                    <p>Privacy policy</p>
-                </div>
-            </div>
+          </div>
         </div>
-
+        <hr class="h-1 text-gray-800" />
+        <div class="footer p-10 flex justify-between text-white">
+          <p>@all rights reserved, P-Ticket services limited.2024</p>
+          <div class="flex gap-4">
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="index.js"></script>
