@@ -1,4 +1,4 @@
-
+let sum =0;
 let count = 1;
 let cart = [];
 const allBtn =document.getElementsByClassName('sit-btn')
@@ -43,6 +43,12 @@ for (const btn of allBtn) {
         
         const nextBtn = document.getElementById('next-btn');
         nextBtn.removeAttribute('disabled')
+        sum++;
+        if(sum ==4){
+            const apply_Btn = document.getElementById('Apply');
+            apply_Btn.removeAttribute('disabled')
+        }
+        
        
     })
 }
@@ -68,6 +74,11 @@ applyBtn.addEventListener('click', function(e){
    }
 
 })
+const numbers = document.getElementById('number')
+        // console.log(numbers.target);
+        numbers.addEventListener('keyup',function nextSection(e){
+            console.log(e.target.value);
+        })
 
 const modal = document.getElementById('next-btn')
 
