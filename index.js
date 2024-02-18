@@ -1,17 +1,32 @@
 
 let count = 1;
+let cart = [];
 const allBtn =document.getElementsByClassName('sit-btn')
 for (const btn of allBtn) {
     btn.addEventListener('click', function(e){
        const btnValue = e.target.innerText;
+       e.target.style.backgroundColor = "#1DD100";
+       cart.push(btnValue)
+    //    console.log(cart);
+       for (const btnName of cart) {
+         if (btnName) {
+           
+         } else {
+           counterArray[btnName] = " ";
+         }
+       }
         // decrement Seat count section
         const decrementCount = parseInt(document.getElementById('sit-ount-decrement').innerText)
         const decri = decrementCount - count;
         document.getElementById('sit-ount-decrement').innerText = decri;
         // ----------selection section -------------------
         const orederSit = parseInt(document.getElementById('sit-count').innerText);
-        const increment = orederSit + 1
+        const increment = orederSit + count
         document.getElementById('sit-count').innerText = increment;
+        if(increment > 4){
+            alert('You have already Four sit  ')
+            return 
+        }
         // Append Html 
         
        const selectedItem =  document.getElementById('append-html')
@@ -51,5 +66,7 @@ applyBtn.addEventListener('click', function(e){
    }
 
 })
+
+const modal = document.getElementById('next-btn')
 
 

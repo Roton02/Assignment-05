@@ -315,9 +315,32 @@
                 placeholder="Enter your email id"
                 type="email"
               />
-              <button class="btn w-full bg-[#1DD100] text-center p-4">
+              <!-- <button class="btn w-full bg-[#1DD100] text-center p-4">
                 Next
-              </button>
+              </button> -->
+              <!-- Modal & Next Button -->
+             
+               <div class="">
+                <button  id=""  onclick="my_modal_5.showModal()" class="btn  w-full bg-[#1DD100]">
+                  Next
+                </button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box text-center flex flex-col items-center justify-center  ">
+                    <img  src="./images/success.png" alt="">
+                    <h3 class="font-bold text-[#1DD100]  text-2xl">SUCCESS</h3>
+                    <p class="py-4 text- font-bold">Thank you for Booking Our Bus Seats. <br> 
+                      We are working hard to find the best service and deals for you. 
+                      </p> 
+                      <p>Shortly you will find a confirmation in your email.</p>
+                    <div class="modal-action">
+                      <form class="w-[450px]"  method="dialog">
+                        <button class="btn w-full text-xl font-semibold bg-pink-500 px-8">Continue</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+               </div>
+
               <div class="flex justify-around">
                 <p><u>Terms and Conditions</u></p>
                 <p><u>Cancellation Policy</u></p>
