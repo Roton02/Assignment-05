@@ -149,7 +149,7 @@
                 class="flex btn bg-[#1DD10026] text-green-400 p-3 px-4 border-green-400"
               >
                 <img src="./images/seat-green.png" alt="" />
-                <h1 class="text-xl"><span id="sit-ount-decrement">40</span> Seats left</h1>
+                <h1 class="text-xl"><span id="sit-ount-decrement">12</span> Seats left</h1>
               </div>
             </div>
             <div class="bg-[#F7F8F8] rounded-2xl mt-5 px-8">
@@ -257,36 +257,7 @@
                   </div>
                 </div>
               </div>
-              <!-- D -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>d</p></div>
-
-                <div class="flex gap-28">
-                  <div class="grid grid-cols-2 gap-20">
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">D1</button>
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">D2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-20">
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">D3</button>
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">D4</button>
-                  </div>
-                </div>
-              </div>
-              <!-- E -->
-              <div class="flex gap-8 mt-5">
-                <div class="text-2xl"><p>E</p></div>
-
-                <div class="flex gap-28">
-                  <div class="grid grid-cols-2 gap-20">
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">E1</button>
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">E2</button>
-                  </div>
-                  <div class="grid grid-cols-2 gap-20">
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">E3</button>
-                    <button class="btn sit-btn px-10 bg-[#0307121A]">E4</button>
-                  </div>
-                </div>
-              </div>
+             
               
             </div>
           </div>
@@ -307,21 +278,22 @@
               <hr class="h-1 bg-gray-300" />
               <div class="flex justify-between text-lg font-medium">
                 <h1>Total Price</h1>
-                <p>BDT <span>0</span></p>
+                <p>BDT <span id="totalValue" >0</span></p>
               </div>
               <div class="relative">
-                <input
+                <input  id="input-feild"
                 class="w-full p-4 rounded-lg "
                 placeholder="Have any copupon?"
                 type="text"
               />
-              <button class="btn absolute p-4 bg-[#1DD100] right-2 top-1 text-white font-semibold ">
+              <button id="Apply" class="btn absolute p-4 bg-[#1DD100] right-2 top-1 text-white font-semibold ">
                 Apply
               </button>
               </div>
+              <hr class="h-1 bg-gray-400" />
               <div class="flex justify-between text-lg font-medium">
                 <h1>Grand Total</h1>
-                <p>BDT <span>0</span></p>
+                <p>BDT <span id="grand_total-value">0</span></p>
               </div>
             </div>
             <div class="space-y-4 mt-4">

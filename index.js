@@ -19,9 +19,37 @@ for (const btn of allBtn) {
         li.innerHTML = `${btnValue} &nbsp; &nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  Economoy
         &nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  550`
         selectedItem.appendChild(li)
+        // Total section 
+        const TotalValue = parseInt(document.getElementById('totalValue').innerText);
+        const grandTotal = parseInt(document.getElementById('grand_total-value').innerText)
+        const total = TotalValue + 550;
+        document.getElementById('totalValue').innerText = total
+        document.getElementById('grand_total-value').innerText = total
+        
         
     })
 }
 
+const applyBtn = document.getElementById('Apply'); 
+applyBtn.addEventListener('click', function(e){
+    const TotalValue = parseInt(document.getElementById('totalValue').innerText);
+    const grandTotal = parseInt(document.getElementById('grand_total-value').innerText)
+   const inputFeild =  document.getElementById('input-feild');
+   const apply = document.getElementById('Apply');
+   const inputValue = inputFeild.value;
+   if(inputValue==='NEW15'){
+    document.getElementById('grand_total-value').innerText = TotalValue - TotalValue*0.15;
+    inputFeild.hidden = true;
+    apply.hidden = true;
+   }else if(inputValue==='Couple 20'){
+    document.getElementById('grand_total-value').innerText = TotalValue - TotalValue*0.2;
+    inputFeild.hidden = true;
+    apply.hidden = true;
+   }
+   else{
+    alert('Invalid Cupon')
+   }
+
+})
 
 
