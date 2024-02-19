@@ -43,7 +43,7 @@ for (const btn of allBtn) {
         }
         
         btn.setAttribute('disabled', true)
-        nextSection(e)
+        nextSection()
     })
 }
 
@@ -70,7 +70,8 @@ applyBtn.addEventListener('click', function(e){
 })
 const numbers = document.getElementById('number')
         // console.log(numbers.target);
-        numbers.addEventListener('keyup',function nextSection(e){
+        numbers.addEventListener('input',function nextSection(e){
+            
             if (e.target.value > 0 && sum >0) {
                 const nextBtn = document.getElementById('next-btn');
                 nextBtn.removeAttribute('disabled')
