@@ -1,5 +1,7 @@
 let sum =0;
 let count = 1;
+const isclickBtn = false;
+const isTypeInput = false
 const allBtn =document.getElementsByClassName('sit-btn')
 for (const btn of allBtn) {
     btn.addEventListener('click', function(e){
@@ -9,7 +11,7 @@ for (const btn of allBtn) {
         }
         e.target.style.backgroundColor = "#1DD100";
        const btnValue = e.target.innerText;
-
+       
         // decrement Seat count section
         const decrementCount = parseInt(document.getElementById('sit-ount-decrement').innerText)
         const decri = decrementCount - count;
