@@ -1,6 +1,5 @@
 let sum =0;
 let count = 1;
-let cart = [];
 const allBtn =document.getElementsByClassName('sit-btn')
 for (const btn of allBtn) {
     btn.addEventListener('click', function(e){
@@ -8,17 +7,9 @@ for (const btn of allBtn) {
             alert('You have already Four sit  ')
             return 
         }
+        e.target.style.backgroundColor = "#1DD100";
        const btnValue = e.target.innerText;
-       e.target.style.backgroundColor = "#1DD100";
-       cart.push(btnValue)
-    //    console.log(cart);
-       for (const btnName of cart) {
-         if (btnName) {
-           
-         } else {
-           counterArray[btnName] = " ";
-         }
-       }
+
         // decrement Seat count section
         const decrementCount = parseInt(document.getElementById('sit-ount-decrement').innerText)
         const decri = decrementCount - count;
@@ -41,15 +32,16 @@ for (const btn of allBtn) {
         document.getElementById('totalValue').innerText = total
         document.getElementById('grand_total-value').innerText = total
         
-        const nextBtn = document.getElementById('next-btn');
-        nextBtn.removeAttribute('disabled')
+        // const nextBtn = document.getElementById('next-btn');
+        // nextBtn.removeAttribute('disabled')
         sum++;
         if(sum ==4){
             const apply_Btn = document.getElementById('Apply');
             apply_Btn.removeAttribute('disabled')
         }
         
-       
+        btn.setAttribute('disabled', true)
+        nextSection(e)
     })
 }
 
@@ -77,9 +69,19 @@ applyBtn.addEventListener('click', function(e){
 const numbers = document.getElementById('number')
         // console.log(numbers.target);
         numbers.addEventListener('keyup',function nextSection(e){
-            console.log(e.target.value);
+            if (e.target.value > 0 && sum >0) {
+                const nextBtn = document.getElementById('next-btn');
+                nextBtn.removeAttribute('disabled')
+            }
         })
 
 const modal = document.getElementById('next-btn')
+const relodes = document.getElementById('relod').addEventListener('click' , function(e){
+    window.location.reload();
+})
+
+
+
+
 
 
